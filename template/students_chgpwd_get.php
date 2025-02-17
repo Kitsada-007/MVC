@@ -6,6 +6,7 @@
     ?>
         <label for="first_name"><?= $row->first_name ?></label> <label for="last_name"><?= $row->last_name ?></label><br>
         <form action="students_chgpwd?id=<?= $row->student_id ?>" method="post">
+            <!-- การส่ง form แบบ Get and Post ใน form เดียว -->
             <label for="password">Password</label><br>
             <input type="password" name="password"><br>
             <label for="confirmpassword">Confirm Password</label><br>

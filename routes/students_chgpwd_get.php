@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 if (!isset($_GET['id'])) {
+    //ถ้าไม่มีไห้กลับไปที่หน้า students
     header('Location: /students');
     exit;
 } else {

@@ -47,6 +47,7 @@ function getStudentById(int $id): mysqli_result|bool
     return $result;
 }
 
+// function ใน การ Update Password
 function changePassword(int $id, string $password): bool
 {
     $conn = getConnection();

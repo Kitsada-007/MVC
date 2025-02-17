@@ -15,3 +15,10 @@ function insertCourse($course): bool
         return false;
     }
 }
+
+function getCourse(): mysqli_result|bool {
+    $conn = getConnection();
+    $sql = 'select * from students';
+    $result = $conn->query($sql);
+    return $result;
+}
